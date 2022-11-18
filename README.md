@@ -1,7 +1,7 @@
-# Learn OSI-SAF Sea Ice
+# Learn OSI-SAF SST
 
 The **learn-osi-saf-sea-ice** module consists of a collection of python-based Jupyter-notebooks 
-design to demonstrate the use of the sea ice parameters products within the OSI SAF catalogue, 
+designed to demonstrate the use of the sea ice parameters products within the OSI SAF catalogue, 
 and to help users begin to work with them.
 
 For any questions about this repository, please contact ops@eumetsat.int.
@@ -17,6 +17,7 @@ All company, product and service names used in this website are for identificati
 purposes only.
 
 ## Authors
+
 * [**Olivier Membrive**](mailto://osi-saf.manager@meteo.fr) - [OSI SAF](https://osi-saf.eumetsat.int)
 * [**Cécile Hernandez**](mailto://osi-saf.manager@meteo.fr) - [OSI SAF](https://osi-saf.eumetsat.int)
 * [**Steinar Eastwood**](mailto://osi-saf.manager@meteo.fr) - [OSI SAF](https://osi-saf.eumetsat.int)
@@ -47,6 +48,8 @@ operating system. Anaconda Python distributions include Jupyter Notebook.
 |ipykernel|6.4.1|BSD-3|https://anaconda.org/conda-forge/ipykernel|
 |cmocean|2.0|MIT|https://anaconda.org/conda-forge/cmocean|
 |cmcrameri|1.4|MIT|https://anaconda.org/conda-forge/cmcrameri|
+|xarray|0.21.1|Apache-2.0|https://anaconda.org/conda-forge/xarray|
+
 
 ## Installation
 
@@ -61,6 +64,7 @@ the Anaconda Navigator). Once you have opened a terminal/prompt, you should navi
 to the directory where you want to put the code. Once you are in the correct directory, 
 you should run the following command;
 
+
 `git clone --recurse-submodules --remote-submodules https://gitlab.eumetsat.int/eumetlab/oceans/ocean-training/sensors/learn-osi-saf-sst.git`
 
 This will make a local copy of all the relevant files.
@@ -71,6 +75,7 @@ This will make a local copy of all the relevant files.
 *Note: if you are using an older version of git, you may find that your submodules are empty. In this case, you need to remove the folder and re-run the line above with `--recursive` added to the end*
 
 ## Usage
+
 
 This collection supports Python 3.9. Although many options are possible, the 
 authors highly recommend that users install the appropriate Anaconda package 
@@ -96,10 +101,10 @@ To create the environment, run:
 
 `conda env create -f environment.yml`
 
-This will create a Python environment called **cmts_learn_osi_saf_sst**. The environment 
+This will create a Python environment called **cmts_learn_osi_saf_seai_ce**. The environment 
 won't be activated by default. To activate it, run:
 
-`conda activate cmts_learn_osi_saf_sst`
+`conda activate cmts_learn_osi_saf_sea_ice`
 
 Now you are ready to go!
 
@@ -144,7 +149,7 @@ need help, or you have found something that doesn't work, then please contact us
 at ops@eumetsat.int. We welcome your feedback!
 
 <hr>
-<hr>
+
 
 ### Overview for advanced users
 
@@ -152,14 +157,16 @@ at ops@eumetsat.int. We welcome your feedback!
 
 `git clone --recurse-submodules --remote-submodules https://gitlab.eumetsat.int/eumetlab/oceans/ocean-training/sensors/learn-osi-saf-sst.git`
 
+
 **Create and set environment**
 
-`conda env create -f environment.yml` \
-`conda activate cmts_learn_osi_saf_sst`
+`conda env create -f environment.yml` 
+`conda activate cmts_learn_osi_saf_sea_ice`
 
 **WEkEO SPECIFIC**
 
-`ipython kernel install --user --name=cmts_learn_osi_saf_sst`
+`ipython kernel install --user --name=cmts_learn_osi_saf_sea_ice`
+`conda activate cmts_learn_osi_saf_sea_ice`
 
 **Activate extensions (1st run in environment, only)**
 
