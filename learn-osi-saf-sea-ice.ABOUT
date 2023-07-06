@@ -1,15 +1,9 @@
 # Component information
 name: learn-osi-saf-sea-ice
 description: Compendium of training content associated with the OSI-SAF sea ice parameters catalogue
-<<<<<<< HEAD
 copyright: 2023 EUMETSAT
 license_spdx: MIT
-date: 06-02-2023
-=======
-copyright: 2022 EUMETSAT
-license_spdx: MIT)
-date: 10-11-2022
->>>>>>> 3a1e0d82a7d20bc347b296d10c16c8ad6e21a6c9
+date: 01-07-2023
 home_url: https://gitlab.eumetsat.int/eumetlab/ocean/sensors/learn-osi-saf-sea-ice
  
 # Package IPR documentation
@@ -32,20 +26,13 @@ about_resource: ./img/thumbs/1_3b_OSI_SAF_sea_ice_mapping_ice_edge_thumb.png
 about_resource: ./img/thumbs/1_3c_OSI_SAF_sea_ice_mapping_ice_type_thumb.png
 about_resource: ./img/thumbs/1_3d_OSI_SAF_sea_ice_mapping_ice_drift_thumb.png
 about_resource: ./img/thumbs/1_4_OSI_SAF_sea_ice_THREDDS_thumb.png
+about_resource: CHANGELOG
+about_resource: CONTRIBUTING.txt
 about_resource: AUTHORS.txt
 about_resource: Index.ipynb
 about_resource: LICENSE.txt
 about_resource: README.md
 about_resource: environment.yml
-=======
-about_resource: ./1_OSI_SAF_sea_ice_introductory/1_1b_OSI_SAF_sea_ice_FTP_data_access.ipynb
-about_resource: ./1_OSI_SAF_sea_ice_introductory/1_2_OSI_SAF_SST_file_structure.ipynb
-about_resource: ./1_OSI_SAF_sea_ice_introductory/1_3a_OSIf_SAF_sea_ice_mapping_Ice_Concentration.ipynb
-about_resource: ./1_OSI_SAF_sea_ice_introductory/1_3b_OSI_SAF_sea_ice_mapping_Ice_Edge.ipynb
-about_resource: ./1_OSI_SAF_sea_ice_introductory/1_3c_OSI_SAF_sea_ice_mapping_Ice_Type.ipynb
-about_resource: ./1_OSI_SAF_sea_ice_introductory/1_3d_OSI_SAF_sea_ice_mapping_Ice_Drift.ipynb
-about_resource: ./1_OSI_SAF_sea_ice_introductory/1_4_OSI_SAF_sea_ice_THREDDS_example.ipynb
->>>>>>> 3a1e0d82a7d20bc347b296d10c16c8ad6e21a6c9
 
 # Notes:
 
