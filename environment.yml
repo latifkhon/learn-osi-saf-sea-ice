@@ -1,10 +1,10 @@
-# copyright: 2023 EUMETSAT
+# copyright: 2024 EUMETSAT
 # license: LICENSE.txt
 name: cmts_learn_osi_saf_sea_ice
 channels:
   - conda-forge
 dependencies:
-  - conda-forge::python=3.9
+  - conda-forge::python
   - conda-forge::jupyterlab
   - conda-forge::netcdf4
   - conda-forge::matplotlib
@@ -15,4 +15,13 @@ dependencies:
   - conda-forge::cmocean
   - conda-forge::cmcrameri
   - conda-forge::xarray
+  - conda-forge::pydap
+  - conda-forge::scipy
+  - conda-forge::shapely
+  - conda-forge::owslib
+  - conda-forge::cdsapi
+  - conda-forge::seaborn
+  - conda-forge::scikit-learn
+
+
 
