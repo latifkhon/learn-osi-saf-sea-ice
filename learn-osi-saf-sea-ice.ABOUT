@@ -1,9 +1,9 @@
 # Component information
 name: learn-osi-saf-sea-ice
 description: Compendium of training content associated with the OSI-SAF sea ice parameters catalogue
-copyright: 2023 EUMETSAT
+copyright: 2024 EUMETSAT
 license_spdx: MIT
-date: 06-02-2023
+date: 02.05.2024
 home_url: https://gitlab.eumetsat.int/eumetlab/ocean/sensors/learn-osi-saf-sea-ice
  
 # Package IPR documentation
@@ -21,6 +21,7 @@ about_resource: ./1_OSI_SAF_sea_ice_introductory/1_3d_OSI_SAF_sea_ice_mapping_Ic
 about_resource: ./1_OSI_SAF_sea_ice_introductory/1_3e_OSI_SAF_sea_ice_mapping_Ice_Emissivity.ipynb
 about_resource: ./1_OSI_SAF_sea_ice_introductory/1_3f_OSI_SAF_sea_ice_plotting_Ice_Index.ipynb
 about_resource: ./1_OSI_SAF_sea_ice_introductory/1_4_OSI_SAF_sea_ice_THREDDS.ipynb
+about_resource: ./2_OSI_SAF_sea_ice_use_case/2_1_OSI_SAF_sea_ice_Monthly_concentration_anomalies.ipynb
 about_resource: ./img/thumbs/1_1_OSI_SAF_sea_ice_FTP_data_access_thumb.png
 about_resource: ./img/thumbs/1_2_OSI_SAF_sea_ice_file_structure_thumb.png
 about_resource: ./img/thumbs/1_3a_OSIf_SAF_sea_ice_mapping_ice_concentration_thumb.png
@@ -33,7 +34,6 @@ about_resource: Index.ipynb
 about_resource: LICENSE.txt
 about_resource: README.md
 about_resource: environment.yml
-
 
 # Notes:
 
