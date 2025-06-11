@@ -28,19 +28,13 @@ wheels/
 # Large data
 *.nc
 *.zip
-<<<<<<< HEAD
-=======
 *.gz
->>>>>>> d88848c145b12b429341d752199203804d159e18
 
 # OSx junk
 *DS_Store*
 
 # Repo specific
-<<<<<<< HEAD
 1_OSI_SAF_sea_ice_introductory/products/
 1_OSI_SAF_sea_ice_introductory/*.png
-=======
-1_OSI_SAF_sea_ice_introductory/*.png
-2_OSI_SAF_sea_ice_advanced/*.png
->>>>>>> d88848c145b12b429341d752199203804d159e18
+2_OSI_SAF_sea_ice_use_case/*.png
+2_OSI_SAF_sea_ice_use_case/anomalies/
